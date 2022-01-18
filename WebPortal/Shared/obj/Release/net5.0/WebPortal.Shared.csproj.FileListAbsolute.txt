@@ -1,0 +1,12 @@
+D:\Asylu\Documents\VS\WebPortal\WebPortal\Shared\bin\Release\net5.0\WebPortal.Shared.deps.json
+D:\Asylu\Documents\VS\WebPortal\WebPortal\Shared\bin\Release\net5.0\WebPortal.Shared.dll
+D:\Asylu\Documents\VS\WebPortal\WebPortal\Shared\bin\Release\net5.0\ref\WebPortal.Shared.dll
+D:\Asylu\Documents\VS\WebPortal\WebPortal\Shared\bin\Release\net5.0\WebPortal.Shared.pdb
+D:\Asylu\Documents\VS\WebPortal\WebPortal\Shared\obj\Release\net5.0\WebPortal.Shared.csproj.AssemblyReference.cache
+D:\Asylu\Documents\VS\WebPortal\WebPortal\Shared\obj\Release\net5.0\WebPortal.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Asylu\Documents\VS\WebPortal\WebPortal\Shared\obj\Release\net5.0\WebPortal.Shared.AssemblyInfoInputs.cache
+D:\Asylu\Documents\VS\WebPortal\WebPortal\Shared\obj\Release\net5.0\WebPortal.Shared.AssemblyInfo.cs
+D:\Asylu\Documents\VS\WebPortal\WebPortal\Shared\obj\Release\net5.0\WebPortal.Shared.csproj.CoreCompileInputs.cache
+D:\Asylu\Documents\VS\WebPortal\WebPortal\Shared\obj\Release\net5.0\WebPortal.Shared.dll
+D:\Asylu\Documents\VS\WebPortal\WebPortal\Shared\obj\Release\net5.0\ref\WebPortal.Shared.dll
+D:\Asylu\Documents\VS\WebPortal\WebPortal\Shared\obj\Release\net5.0\WebPortal.Shared.pdb

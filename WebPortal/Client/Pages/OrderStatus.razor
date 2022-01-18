@@ -1,0 +1,107 @@
+﻿@page "/order-status"
+@using WebPortal.Shared
+@inject HttpClient Http;
+
+@if(!formSubmitted){
+    <h2 id="title">Order Status Inquiry</h2>
+    <EditForm OnValidSubmit="@HandleValidSubmit" Model="@formOrder">
+        <DataAnnotationsValidator />
+        @if (error)
+        {
+            <div class="alert alert-warning alert-dismissible" role="alert">
+                <strong>Whoops!</strong>
+                Invalid customer number or order number.
+            </div>
+        }
+        @if (fail)
+        {
+            <div class="alert alert-danger" role="alert">
+                <strong>Multiple Invalid Attempts</strong>
+                If you are having problems finding your order please email example@email.com with your account and order number.
+            </div>
+        }
+    <div class="container">
+        <p class="type">Customer Number</p>
+        <InputText @bind-Value="customerNumber" placeholder="1-4 Digit Customer Number" /><br />
+        <p class="type">Order Number</p>
+        <InputNumber @bind-Value="orderNumber" /><br />
+
+    </div>
+        <button type="submit">Submit</button>
+    </EditForm>
+} else
+{
+    <p>
+        Thanks for contacting Masters Wholesale!
+
+        We are tracking your order with the our vendors and will let you know when we have it available here for you locally in our warehouse.
+
+        Here’s the ETA/Status notes of the items under order # @order.number:
+    </p>
+    <br />
+    <p>Order: @order.number, Date: @order.orderDate</p>
+    <table>
+        <tr id="head">
+            <td>Quantity</td>
+            <td>Manufacturer Model</td>
+            <td>Item Description</td>
+            <td>Current ETA</td>
+        </tr>
+        @foreach (Item item in order.items)
+        {
+            <tr>
+                <td>@item.quantity</td>
+                <td>@item.model</td>
+                <td>@item.description</td>
+                <td>@item.eta</td>
+            </tr>
+        }
+    </table>
+    <br />
+    <p>
+        Please be patient with us and know that it could take several months for us to receive your product.  We are doing everything in our power to order it and receive it in a timely manner, but some circumstances are simply beyond our control.  We will provide you updates as often as we can, and we will notify you when your product has arrived.
+    </p><br />
+    <p>
+        Once your product has arrived in our warehouse we will reach out to you to schedule delivery/install, if you have any questions please email example@email.com.
+    </p>
+}
+@code {
+    private bool formSubmitted = false;
+    private bool error = false;
+    private bool fail = false;
+    short count = 0;
+    private string customerNumber;
+    private int orderNumber;
+
+    private Customer[] customers;
+    private Customer customer;
+    private Order formOrder = new Order();
+    private Order order;
+
+    protected async override Task OnInitializedAsync()
+    {
+        customers = await Http.GetFromJsonAsync<Customer[]>("api/OrderStatus");
+        StateHasChanged();
+    }
+    public void HandleValidSubmit()
+    {
+        if (Array.Find(customers, customer => customer.number == customerNumber) != null)
+        {
+            customer = Array.Find(customers, customer => customer.number == customerNumber);
+            if (customer.GetOrder(orderNumber) != null)
+            {
+                order = customer.GetOrder(orderNumber);
+                formSubmitted = true;
+            }
+        } else
+        {
+            error = true;
+            count++;
+            if(count >= 3)
+            {
+                fail = true;
+                error = false;
+            }
+        }
+    }
+}

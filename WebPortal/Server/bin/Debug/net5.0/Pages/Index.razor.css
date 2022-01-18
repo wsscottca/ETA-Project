@@ -1,0 +1,20 @@
+﻿h1 {
+    color: #226a97;
+    font-family: 'IBM Plex Sans Arabic', Tahoma, sans-serif;
+    font-weight: bold;
+}
+h4 {
+    color: #226a97;
+    font-family: 'IBM Plex Sans Arabic', Tahoma, sans-serif;
+    font-weight: bold;
+}
+#card {
+    left: 0;
+    width: 75vw;
+    height: 35vh;
+    background-image: url(../img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:auto;
+}

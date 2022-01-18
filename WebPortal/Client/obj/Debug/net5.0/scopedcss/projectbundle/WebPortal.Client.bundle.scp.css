@@ -1,0 +1,219 @@
+@import '';
+
+/* /Pages/Index.razor.rz.scp.css */
+h1[b-6n5tbi3jm6] {
+    color: #226a97;
+    font-family: 'IBM Plex Sans Arabic', Tahoma, sans-serif;
+    font-weight: bold;
+}
+h4[b-6n5tbi3jm6] {
+    color: #226a97;
+    font-family: 'IBM Plex Sans Arabic', Tahoma, sans-serif;
+    font-weight: bold;
+}
+#card[b-6n5tbi3jm6] {
+    left: 0;
+    width: 75vw;
+    height: 35vh;
+    background-image: url(../img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:auto;
+}
+/* /Pages/OrderStatus.razor.rz.scp.css */
+h2[b-ze1l96g83y] {
+    color: #226a97;
+    font-family: 'IBM Plex Sans Arabic', Tahoma, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+}
+.container[b-ze1l96g83y] {
+    margin-left: 20px;
+}
+.type[b-ze1l96g83y] {
+    color: #3C84B1;
+    margin: 0;
+    margin-top: 10px;
+}
+[b-ze1l96g83y] input{
+    min-width: 200px;
+    max-width: 350px;
+    width: 30vw;
+    height: 40px;
+    padding: 10px 20px;
+    border: 1px solid #226a97;
+    border-radius: 20px;
+    margin: 0;
+}
+[b-ze1l96g83y] input::-webkit-outer-spin-button,
+[b-ze1l96g83y] input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+[b-ze1l96g83y] input[type=number] {
+    -moz-appearance: textfield;
+}
+button[b-ze1l96g83y] {
+    background-color: #226a97;
+    font-family: 'IBM Plex Sans Arabic', Tahoma, sans-serif;
+    font-size: 18px;
+    color: #fff;
+    width: 7vw;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    margin-top: 20px;
+    min-width: 100px;
+    z-index: 1;
+}
+
+button:hover[b-ze1l96g83y] {
+    background-color: #1e5d85;
+}
+
+button:active[b-ze1l96g83y] {
+    background-color: #fff;
+}
+
+td[b-ze1l96g83y] {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* /Shared/MainLayout.razor.rz.scp.css */
+.page[b-tqmacddy8u] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.main[b-tqmacddy8u] {
+    flex: 1;
+}
+
+.sidebar[b-tqmacddy8u] {
+    background-color: #06446b;
+}
+
+.top-row[b-tqmacddy8u] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-tqmacddy8u]  a, .top-row .btn-link[b-tqmacddy8u] {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+    }
+
+    .top-row a:first-child[b-tqmacddy8u] {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-tqmacddy8u] {
+        display: none;
+    }
+
+    .top-row.auth[b-tqmacddy8u] {
+        justify-content: space-between;
+    }
+
+    .top-row a[b-tqmacddy8u], .top-row .btn-link[b-tqmacddy8u] {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-tqmacddy8u] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-tqmacddy8u] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-tqmacddy8u] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .main > div[b-tqmacddy8u] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+/* /Shared/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-871i4qcfo1] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row[b-871i4qcfo1] {
+    height: 100px;
+    min-height: 100px;
+    background-color: #f7f7f7;
+    border-bottom: 2px solid #002b52;
+    border-right: 1px solid #d6d5d5;
+}
+
+.navbar-brand[b-871i4qcfo1] {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.oi[b-871i4qcfo1] {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item[b-871i4qcfo1] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type[b-871i4qcfo1] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-871i4qcfo1] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-871i4qcfo1]  a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.nav-item[b-871i4qcfo1]  a.active {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+}
+
+.nav-item[b-871i4qcfo1]  a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-871i4qcfo1] {
+        display: none;
+    }
+
+    .collapse[b-871i4qcfo1] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+}

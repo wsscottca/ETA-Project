@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAEcyPxz/nZUSjlEEoV71dCQAAAAACAAAAAAAQZgAAAAEAACAAAAADueCyIsKfuK6Asw8KrZlJZoW51aLM+W24mn2CnZM+VgAAAAAOgAAAAAIAACAAAAA1Z/nkYfYVVUr3L6OZ0cLtY6qHqHZO1X8nrDz3TnF5QoAAAABYvflhXd5XJggcUyiXiqw9UNOUNdM3NPXsKXKSQPsRdn+2t2/CXd85N/GkyJttuqifw1cxEN9Y+f7zWZ0niAkJddquOL/H/yvvV8q4Al5b/S1jXCMw0k+1PsvbOZFGoiqqdE9K0YVMohDVZrvkBIDv5NjytW0948EWSR578dWgNEAAAADKkIXrsPFkH/bk7K8Bx6sgYdHB+odwz1mDdQSZv2yblEL1AS8DmTCe2AVXxg99pLszKpEc8VqZi4lQqfGG8ICr</EncryptedPassword>
+    <_PublishTargetUrl>ftp://waws-prod-dm1-241.ftp.azurewebsites.windows.net/site/wwwroot</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Data/open_orders.xlsx">
+      <publishTime>09/15/2021 12:35:04</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
